@@ -10,6 +10,6 @@ class Unloading_info_to_json:
             with open("rooms_with_students.json", 'w') as new_file:
                 json.dump(self.info_list, new_file)
         except:
-            print("Sorry, you failed")
+            return "Sorry, you failed"
         finally:
             return "Mission completed"
